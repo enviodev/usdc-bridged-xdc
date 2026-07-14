@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./node_modules/envio/evm.schema.json
 name: erc20indexer
 description: ERC-20 indexer
-networks:
+chains:
   - id: 50
     hypersync_config:
       url: https://50.hypersync.xyz
@@ -13,4 +13,3 @@ networks:
         events:
           - event: "Approval(address indexed owner, address indexed spender, uint256 value)"
           - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-unordered_multichain_mode: true
